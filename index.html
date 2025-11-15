@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+    <title>Food Delivery Services</title>
+  </head>
+  <body>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <!-- logo -->
+      <h1 class="logo">FoodTime</h1>
+      <!-- list of menus -->
+      <div class="sidebar-menus">
+        <a href="#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-receipt"></i>Bills</a>
+        <a href="#"><i class="fa-solid fa-wallet"></i>Wallet</a>
+        <a href="#"><i class="fa-solid fa-bell"></i>Notifications</a>
+        <a href="#"><i class="fa-solid fa-comments"></i>Contact Us</a>
+        <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+      </div>
+      <!-- logout -->
+      <div class="sidebar-logout">
+        <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+      </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+      <!-- main navbar -->
+      <div class="main-navbar">
+        <!-- menu when appear on mobile version -->
+        <i class="fa-duotone fa-solid fa-list-ul"></i>
+        <div class="search">
+          <input type="text" placeholder="What you want to eat?" />
+          <button class="search-btn">Search</button>
+        </div>
+        <!-- profile icon left side of navbar -->
+        <div class="profile">
+          <a href="#" class="cart"
+            ><i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="#" class="user"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+      <div class="main-highlight">
+        <!-- title section and arrow -->
+        <div class="main-header">
+          <h2 class="main-title">Recommendations</h2>
+          <div class="main-arrow">
+            <i class="bi bi-arrow-left-circle"></i>
+            <i class="bi bi-arrow-right-circle"></i>
+          </div>
+        </div>
+        <!-- highlight menu -->
+        <div class="main-wrapper">
+          <div class="highlight-card">
+            <img src="images/salad.jpg" alt="salad" class="highlight-img" />
+            <div class="highlight-desc">
+              <h4>Fresh Salad</h4>
+              <p>$42.50</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <img src="images/coffee.jpg" alt="coffee" class="highlight-img" />
+            <div class="highlight-desc">
+              <h4>Coffee Latte</h4>
+              <p>$20.00</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <img src="images/steak.jpg" alt="steak" class="highlight-img" />
+            <div class="highlight-desc">
+              <h4>Premium Steak</h4>
+              <p>$145.20</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <img src="images/burger.jpg" alt="burger" class="highlight-img" />
+            <div class="highlight-desc">
+              <h4>Burger</h4>
+              <p>$145.20</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main menus / order -->
+      <div class="main-menus">
+        <!-- filter section -->
+        <div class="main-filter">
+          <div>
+            <h2 class="main-title">Menu <br />Category</h2>
+            <div class="main-arrow">
+              <i
+                class="fa-regular fa-arrow-right-to-arc bi-arrow-left-circle left-menu"
+              ></i>
+              <i
+                class="fa-solid fa-arrow-left-to-arc bi-arrow-right-circle right-menu"
+              ></i>
+            </div>
+          </div>
+          <div class="filter-wrapper">
+            <div class="filter-card">
+              <div class="filter-icon">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <p>All Menus</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <i class="fa-solid fa-burger"></i>
+              </div>
+              <p>Burger</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <i class="fa-solid fa-pizza-slice"></i>
+              </div>
+              <p>Pizza</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <i class="fa-solid fa-wine-glass"></i>
+              </div>
+              <p>Wine</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <i class="fa-solid fa-ice-cream"></i>
+              </div>
+              <p>Ice Cream</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <i class="fa-solid fa-mug-hot"></i>
+              </div>
+              <p>Coffee</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <i class="fa-solid fa-fish-fins"></i>
+              </div>
+              <p>Seafood</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <i class="fa-solid fa-apple-whole"></i>
+              </div>
+              <p>Healthy</p>
+            </div>
+          </div>
+        </div>
+        <hr class="divider" />
+        <!-- list of food -->
+        <div class="main-detail">
+          <h2 class="main-title">Choose Order</h2>
+          <div class="detail-wrapper">
+            <div class="detail-card">
+              <img src="images/seafood.jpg" alt="seafood" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>SeaFood</h4>
+                  <p class="detail-sup">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    assumenda maiores sapiente.
+                  </p>
+                  <p class="price">$152.00</p>
+                </div>
+                <i class="fa-regular fa-bookmark detial-favorites"></i>
+              </div>
+            </div>
+            <div class="detail-card">
+              <img src="images/pizza.jpg" alt="pizza" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Pizza</h4>
+                  <p class="detail-sup">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    assumenda maiores sapiente.
+                  </p>
+                  <p class="price">$68.75</p>
+                </div>
+                <i class="fa-regular fa-bookmark detial-favorites"></i>
+              </div>
+            </div>
+            <div class="detail-card">
+              <img src="images/wine.jpg" alt="wine" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Wine</h4>
+                  <p class="detail-sup">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    assumenda maiores sapiente.
+                  </p>
+                  <p class="price">$40.45</p>
+                </div>
+                <i class="fa-regular fa-bookmark detial-favorites"></i>
+              </div>
+            </div>
+            <div class="detail-card">
+              <img src="images/burger.jpg" alt="burger" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Burger</h4>
+                  <p class="detail-sup">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    assumenda maiores sapiente.
+                  </p>
+                  <p class="price">$35.00</p>
+                </div>
+                <i class="fa-regular fa-bookmark detial-favorites"></i>
+              </div>
+            </div>
+            <div class="detail-card">
+              <img src="images/coffee.jpg" alt="coffee" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Hot Cafe Latte</h4>
+                  <p class="detail-sup">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    assumenda maiores sapiente.
+                  </p>
+                  <p class="price">$20.00</p>
+                </div>
+                <i class="fa-regular fa-bookmark detial-favorites"></i>
+              </div>
+            </div>
+            <div class="detail-card">
+              <img src="images/salad.jpg" alt="salad" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Fresh Salad</h4>
+                  <p class="detail-sup">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    assumenda maiores sapiente.
+                  </p>
+                  <p class="price">$42.50</p>
+                </div>
+                <i class="fa-regular fa-bookmark detial-favorites"></i>
+              </div>
+            </div>
+            <div class="detail-card">
+              <img src="images/chicken.jpg" alt="seafood" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Chicken</h4>
+                  <p class="detail-sup">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    assumenda maiores sapiente.
+                  </p>
+                  <p class="price">$122.45</p>
+                </div>
+                <i class="fa-regular fa-bookmark detial-favorites"></i>
+              </div>
+            </div>
+            <div class="detail-card">
+              <img src="images/sushi.jpg" alt="seafood" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Sushi</h4>
+                  <p class="detail-sup">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    assumenda maiores sapiente.
+                  </p>
+                  <p class="price">$177.60</p>
+                </div>
+                <i class="fa-regular fa-bookmark detial-favorites"></i>
+              </div>
+            </div>
+            <div class="detail-card">
+              <img src="images/pasta.jpg" alt="seafood" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Pasta</h4>
+                  <p class="detail-sup">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    assumenda maiores sapiente.
+                  </p>
+                  <p class="price">$105.34</p>
+                </div>
+                <i class="fa-regular fa-bookmark detial-favorites"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
